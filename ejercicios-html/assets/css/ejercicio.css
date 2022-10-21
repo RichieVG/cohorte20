@@ -1,0 +1,21 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: darkgray;
+}
+
+section {
+    background-color: greenyellow;
+    margin: 0;
+}
+
+main {
+    background-color: yellow;
+    margin-top: 25px;
+}
+
+footer {
+    background-color: gray;
+}

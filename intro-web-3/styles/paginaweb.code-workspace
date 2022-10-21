@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../paginaweb"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "intro-web-3"
+	}
+}
