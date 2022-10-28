@@ -1,0 +1,7 @@
+.altura-img{
+    height: calc(100vh - px);
+}
+
+.imagen{
+    height: 25rem;
+}
