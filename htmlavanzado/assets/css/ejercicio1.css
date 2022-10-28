@@ -1,0 +1,46 @@
+form {
+
+    display: inline-block;
+    padding: 30px;
+    width: 350px;
+    background-color: green;
+    border-top: 4px solid cyan;
+    border-right: 4px solid cyan;
+    border-bottom: 4px solid cyan;
+    border-left: 4px solid cyan;
+    border-radius: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    color: white;
+}
+
+.clase{
+    width: 150px;
+}
+
+#btn {
+    background-color: white;
+    width: 50%;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.campo {
+    margin-left: 38px;
+}
+
+input {
+    border: 2px solid red;
+}
