@@ -50,3 +50,8 @@ funcion2();
         return parametro;
     }
 console.log("Llamando a la función anónima " + miFuncion0 (4));
+
+let funcion01 = function (caracteres){
+return "Hola " + caracteres;
+}("Lunes");
+console.log("El resultado es: " + funcion01);
