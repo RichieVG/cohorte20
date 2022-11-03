@@ -1,4 +1,4 @@
-let miNom = "José Ricardo Valdivia González"
+/* let miNom = "José Ricardo Valdivia González"
 console.log(miNombre);
 
 function miNombre (){
@@ -42,9 +42,9 @@ funcion2();
     }
     let salida = funcion4(2);
 
-    console.log("El producto es " + salida);
+    console.log("El producto es " + salida); */
     /* Funciones anonimas */
-    let miFuncion0 = function (parametro){
+    /* let miFuncion0 = function (parametro){
         parametro = parametro * 2;
         return parametro;
     }
@@ -59,7 +59,7 @@ let suma = (x, y) => {
     return x+y
 };
 let resultado = suma (5, 3);
-console.log("La suma es: " + resultado);
+console.log("La suma es: " + resultado); */
 
 //EJERCICIOS
 
@@ -72,17 +72,17 @@ precioTotal = (precio * impuesto ) + gartosEnvio;
 como salida precio Total */
 
 
-let calcularPrecioTotal = function (precio){
+/* let calcularPrecioTotal = function (precio){
 let impuesto = 1.16;
 let gastosEnvio = 10;
 let precioTotal = (precio * impuesto ) + gastosEnvio;
 return precioTotal;
 }
 let precioTotal = calcularPrecioTotal(23.34);
-console.log("El precio total es: " + precioTotal);
+console.log("El precio total es: " + precioTotal); */
 
 //FUNCIÓN FLECHA
-let salida
+/* let salida
 
 let calcularPrecioTotalFlecha = (precio) => {
     let impuestos = 1.16;
@@ -101,20 +101,11 @@ let calcularPrecioTotalFlecha = (precio,porcentajeImpuestos) => {
     return precioTotal;
 }
 let precioTotal = calcularPrecioTotalFlecha (23.34);
-console.log("El precio total con función flecha es: " + precioTotal);
-
-//ABSTRACCIÖN
-
-let miObjeto = {
-    nombre: "Juan"
-    edad: 30
-};
-let mensaje = "Tu nombre es: " + miObjeto.nombre;
-mensaje += "Tienes " + miObjeto["edad"] + " años";
+console.log("El precio total con función flecha es: " + precioTotal); */
 
 //
 
-function calcularPrecioTotal(precio = 0){
+/* function calcularPrecioTotal(precio = 0){
     let precioTotal = (precio * imp) + env
     return precioTotal
 }
@@ -131,4 +122,39 @@ console.log("Precio Total (Anonima) = ", precioTotal1(prec));
 // Función flecha
 
 let precioTotal2 = (precio = 0) => (precio * imp) + env
-console.log("Precio Total (Flecha) = ", precioTotal2(prec));
+console.log("Precio Total (Flecha) = ", precioTotal2(prec)); */
+
+//ABSTRACCIÖN
+
+let miObjeto = {
+    nombre: "Juan",
+    edad: 30,
+    datos: function () {
+
+        let mensaje = "Tú eres " + this.nombre;
+        mensaje += " y tienes " + this.edad + " años";
+        console.log(mensaje);
+    }
+};
+miObjeto.datos();
+
+let constructor = function () {
+    let objPersona = {
+        nombre: "Richie",
+        nss: 2357,
+        datosPersona: function () {
+            let msj = "Eres " + this.nombre + " el número nss es " + this.nss;
+            console.log(msj);
+        },
+        otroMetodo: function (parametro){
+            let numero = 8;
+            console.log("La suma es: " + (numero + parametro));
+        }
+    };
+    return objPersona;
+}
+let varObjReg = constructor() //crear la variable objeto
+varObjReg.datosPersona();
+varObjReg.otroMetodo(5);
+
+//implementar este metodos con aplicar los impuestos
