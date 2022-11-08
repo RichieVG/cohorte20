@@ -9,7 +9,7 @@
 <body>
 
 <!-- Formularios -->
-    <h1>Datos personales</h1>
+<!--     <h1>Datos personales</h1>
     <form id="formulario">
         Nombre <input type="text" name="Nombre" value="Richie"> <br>
         Apellido <input type="text" name="Apellido" value="Valdivia">
@@ -25,6 +25,41 @@
             }
             document.getElementById("valores").innerHTML = texto;
         }
+    </script> -->
+
+    <!-- Manejo de cocument.write -->
+    <!-- <h1> Ejemplo DOM document.write</h1>
+    <button onclick="cambio()"">mostrar</button> -->
+
+    <!-- <script>
+        function cambio(){
+        document.write("Saludo")
+
+
+        }
+
+    
+    </script> -->
+
+    <!-- Imagen -->
+
+    <h1> DOM imagenes </h1>
+
+    <button onclick="cambiar()">cambio</button>
+    <br>
+    <img id="imagen" src="img/kaws.jpg" alt="kaws">
+
+    <script>
+        function cambiar(){
+
+            document.getElementById("imagen").src = "img/kws.jpg";
+        }
     </script>
+
+
+
+
+
+
 </body>
 </html>
