@@ -1,4 +1,5 @@
-class Persona {
+
+class Persona{
 
     constructor (nombre, apellido){
         this._nombre = nombre;
@@ -12,7 +13,10 @@ class Persona {
     }
     nombreCompleto () {
         return this._nombre + ' ' +this._apellido;
-    }     
+    }
+    toString () {
+        return this.nombreCompleto();
+    }
 }
 
 class Empleado extends Persona{
@@ -26,12 +30,41 @@ class Empleado extends Persona{
     }
     get empresa (){
         return this._empresa;
-    }    
+    }  
+    //Sobre escritura del método
+    nombreCompleto () {
+        return super.nombreCompleto() + " " + this._empresa;
+    } 
+}
+
+//Cliente
+class Cliente extends Persona{
+    constructor(nombre,apellido,empresa){
+        
+        super(nombre,apellido);
+        this._empresa = empresa;
+    }
+    set empresa (empresa){
+        this._empresa = empresa;
+    }
+    get empresa (){
+        return this._empresa;
+    }  
+    //Sobre escritura del método
+    nombreCompleto () {
+        return super.nombreCompleto() + " " + this._empresa;
+    } 
 }
 
 let p1 = new Persona('Hugo', 'Sanchez');
 console.log(p1.nombreCompleto());
+console.log(p1.toString());
 
 let E1 = new Empleado('Juan', 'Perez', 'Coopel');
+console.log(E1.nombreCompleto());
+console.log(E1.toString());
 
-console.log(E1.nombreCompleto() + ' trabaja en ' + E1._empresa);
+//Cliente
+let R1 = new Empleado('Juan', 'Perez', 'Coopel');
+console.log(E1.nombreCompleto());
+console.log(E1.toString());
