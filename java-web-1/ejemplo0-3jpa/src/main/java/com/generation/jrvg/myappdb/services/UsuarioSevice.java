@@ -1,6 +1,7 @@
 package com.generation.jrvg.myappdb.services;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,4 +21,23 @@ public class UsuarioSevice {
 		return usuarioRepositorio.save(usuario);
 	}
 	
+	public ArrayList<UsuarioModel> obtenerPorPrioridad(Integer prioridad) {
+		return usuarioRepositorio.findByPrioridad(prioridad);
+	}
+	
+	public Optional<UsuarioModel> obtenerPorId(long id){
+		return usuarioRepositorio.findById(id);
+	}
+	
+	public boolean eliminarUsuario(Long id) {
+		try {
+			usuarioRepositorio.deleteById(id);
+			return true;
+			
+		} catch (Exception e) {
+			return false;
+		}
+		
+	}
+
 }
