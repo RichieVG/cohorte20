@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ClaseMain {
 
 	private static void main(String[] args) {
+		
 		Scanner e=new Scanner(System.in);
 		
 		String dias;
