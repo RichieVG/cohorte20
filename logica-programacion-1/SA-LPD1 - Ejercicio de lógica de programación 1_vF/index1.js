@@ -11,20 +11,20 @@ function ordenar(a, b, c) {
     if (a > b && a > c) {
       if (b > c) {
         imprimir(a, b, c);
-      } else {
-        imprimir(a, c, b);
+        } else {
+          imprimir(a, c, b);
       }
-    } else if (b > a && b > c) {
+        } else if (b > a && b > c) {
       if (a > c) {
-        imprimir(b, a, c);
-      } else {
-        imprimir(b, c, a);
+            imprimir(b, a, c);
+            } else {
+              imprimir(b, c, a);
       }
-    } else if (c > a && c > b) {
+        } else if (c > a && c > b) {
       if (a > b) {
-        imprimir(c, a, b);
-      } else {
-        imprimir(c, b, a);
+                imprimir(c, a, b);
+              } else {
+                  imprimir(c, b, a);
       }
     }
   }
@@ -32,7 +32,7 @@ function ordenar(a, b, c) {
 
 function imprimir(number1, number2, number3) {
   console.log(
-    "Los números de mayor a menor son: " +
+    "Los números ordenados de mayor a menor se acomodan así: " +
       number1 +
       "," +
       number2 +
