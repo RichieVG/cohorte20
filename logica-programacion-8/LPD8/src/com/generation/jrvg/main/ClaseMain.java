@@ -4,12 +4,10 @@ public class ClaseMain {
 
 	public static void main(String[] args) {
 		static boolean num(int numero) {
-			if (numero <= 0) {
-				return false;
+			if (numero <= 0) {return false;
 			}
 			for (int i = 2; i < num / 2; i++) {
-				if (() == 0) {
-					return false;
+				if (() == 0) {return false;
 				}
 			}
 			return true;
