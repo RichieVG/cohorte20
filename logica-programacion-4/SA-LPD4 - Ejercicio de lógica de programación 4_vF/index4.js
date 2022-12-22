@@ -1,20 +1,14 @@
-fibonacci();
+f();
+function f() {
 
-function fibonacci() {
   let num;
-  do {
-    num = Number(
-      prompt(
-        "Introduce los números:"
-      )
-    );
+
+  do {num = Number(prompt("Introduce los números:"));
     {
-      let serie = [0, 1];
-      for (let i = 2; i < num; i++) {
-        serie.push(serie[i - 1] + serie[i - 2])}
+      let datos = [0, 1];
+      for (let i = 2; i < num; i++) {datos.push(datos[i - 1] + datos[i - 2])}
         let sec = "";
-        serie.forEach((element) => {
-          sec += element + ", "});
+        datos.forEach((element) => {sec += element + ", "});
           sec = sec.slice(0, -2);
           sec += ".";
           console.log(sec);

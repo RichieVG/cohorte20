@@ -1,42 +1,26 @@
-const number1 = parseInt(prompt("Introduce el primer número: "));
-const number2 = parseInt(prompt("Introduce el segundo número: "));
-const number3 = parseInt(prompt("Introduce el tercer número: "));
+const numberOne = parseInt(prompt("Agrega el 1er dato num:"));
+const numberTwo = parseInt(prompt("Agrega el 2do dato num:"));
+const numberThree = parseInt(prompt("Agrega el 3er dato num:"));
 
-ordenar(number1, number2, number3);
+dato(numberOne, numberTwo, numberThree);
 
-function ordenar(a, b, c) {
-  if (a == b && b == c) {
-    console.log("Todos los números son iguales");
-  } else {
-    if (a > b && a > c) {
-      if (b > c) {
-        imprimir(a, b, c);
-        } else {
-          imprimir(a, c, b);
-      }
-        } else if (b > a && b > c) {
-      if (a > c) {
-            imprimir(b, a, c);
-            } else {
-              imprimir(b, c, a);
-      }
-        } else if (c > a && c > b) {
-      if (a > b) {
-                imprimir(c, a, b);
-              } else {
-                  imprimir(c, b, a);
+function dato(a, b, c) {
+  if (a==b && b==c) {console.log("Los números son iguales");
+} else {
+    if (a>b && a>c) {
+      if (b > c) {ss(a, b, c);
+        } else {ss(a, c, b);
+      }} else if (b > a && b > c) {
+      if (a > c) {ss(b, a, c);
+        } else {ss(b, c, a);
+      }} else if (c > a && c > b) {
+      if (a > b) {ss(c, a, b);
+        } else {ss(c, b, a);
       }
     }
   }
 }
 
-function imprimir(number1, number2, number3) {
-  console.log(
-    "Los números ordenados de mayor a menor se acomodan así: " +
-      number1 +
-      "," +
-      number2 +
-      "," +
-      number3
-  );
+function ss(numberOne, numberTwo, numberThree) {
+  console.log("Los números ordenados de mayor a menor se acomodan así: " + numberOne + "," + numberTwo + "," + numberThree);
 }

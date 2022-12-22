@@ -1,16 +1,14 @@
 fact();
-
 function fact() {
-  let numero;
-  do {
-    numero = Number(
-      prompt("Introduce el número:"));
+
+  let num;
+
+  do { num = Number(prompt("Agrega el número:"));
     {
-      let resultado = 1;
-        for (let i = 1; i <= numero; i++) {
-          resultado *= i;
+      let r = 1;
+        for (let i = 1; i <= num; i++) {r *= i;
       }
-    console.log("El factorial es: ", resultado);
+    console.log("El factorial es: ", r);
     }
-  } while (isNaN(numero));
+  } while (isNaN(num));
 }

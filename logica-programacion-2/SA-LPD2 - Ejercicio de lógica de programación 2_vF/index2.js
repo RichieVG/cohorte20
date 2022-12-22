@@ -1,12 +1,12 @@
-convertirTemperatura();
+transCtoKF();
 
-function convertirTemperatura() {
+function transCtoKF() {
   let c;
   do {
-    c = parseInt(prompt("Introduzca los grados Celsius:"));
+    c = parseInt(prompt("Introduzca los grados Celsius para convertir:"));
     {
-      console.log("Grados Kelvin: ", (c + 273.15));
-      console.log("Grados Fahrenheit: ", c * 1.8 + 32);
+      console.log("Los grados Kelvin son: ", (c + 273.15));
+      console.log("Los grados Fahrenheit son: ", c * 1.8 + 32);
     }
   } while (isNaN(c));
 }
